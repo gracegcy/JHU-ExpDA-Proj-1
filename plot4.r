@@ -20,7 +20,7 @@ plot(data_subset$date_Time, data_subset$Voltage, type = "l", xlab="datetime", yl
 plot(data_subset$date_Time,data_subset$Sub_metering_1,type="l",xlab=" ",ylab="Energy Sub Metering",ylim=c(0,40))
 lines(data_subset$date_Time,data_subset$Sub_metering_2,ylim=c(0,40),col="red")
 lines(data_subset$date_Time,data_subset$Sub_metering_3,ylim=c(0,40),col="blue")
-legend("topright", col = c("black", "red", "blue"), lty = c("solid", "solid", "solid"), legend = names(data_subset[,7:9]))
+legend("topright", col = c("black", "red", "blue"), lty = c("solid", "solid", "solid"), legend = names(data_subset[,7:9]),cex = 0.5)
 ## plot #4
 plot(data_subset$date_Time, data_subset$Global_reactive_power, type = "l", xlab="datetime", ylab = "Global_reactive_power")
 
